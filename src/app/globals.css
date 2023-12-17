@@ -25,3 +25,44 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+/* Home.module.css */
+
+.swing {
+    animation: swing ease-in-out 1s infinite alternate;
+    transform-origin: center -20px;
+    
+}
+
+.swing:after{
+    content: '';
+    position: absolute;  
+    width: 40px; height: 40px;  
+    border: 1px solid #fff;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+/* nail */
+.swing:before{
+    content: '';
+    position: absolute;
+    width: 15px; height: 15px;
+    top: 82px;left: 49.6%;
+    border-radius: 50% 50%;
+    background: #fff;
+}
+
+ .homePage {
+  overflow: hidden;
+ }
+@keyframes swing {
+    0% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
+}
+
+.profile-header{
+  background: url('../assets/blob.svg');
+  width: 100%;
+  background-repeat: no-repeat;
+}
