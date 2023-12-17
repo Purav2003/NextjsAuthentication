@@ -3,6 +3,7 @@ import Navbar from '@/addons/Navbar';
 export default function Home() {
   return (
     <div className='homePage'>
+      <title>Home </title>
       <Navbar />
 
       <main className={`swing flex min-h-screen flex-col items-center justify-between p-24  `}>
